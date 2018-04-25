@@ -42,13 +42,14 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 let hourSalary = 23;
-let earning = 0;
+let hoursWorked = 0;
+let earnings = 0;
 
 for (i = 0; i < tasks.length; i++) {
   if (tasks[i].duration >= 120) {
-    earning += tasks[i].duration;
+    hoursWorked += tasks[i].duration / 60;
   }
 }
-console.log("Maartje has earned: " + earning + " euros.");
 
-// https://stackoverflow.com/questions/28618976/javascript-proper-syntax-for-if-statement-inside-for-loop
+earnings = hoursWorked * hourSalary;
+console.log("Maartje has earned: " + earnings.toFixed(2) + " euros.");
