@@ -1,3 +1,4 @@
+"use strict"
 let favoriteAnimals = ["blowfish", "capricorn", "giraffe"];
 const maurosFavoriteAnimal = "turtle";
 favoriteAnimals.push(maurosFavoriteAnimal);
