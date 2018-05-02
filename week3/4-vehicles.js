@@ -2,12 +2,12 @@
 
 function vehicleType(color, code) {
   if (code === 1) {
-    console.log("a " + color + " car");
+    return "a " + color + " car";
   } else if (code === 2) {
-    console.log("a " + color + " motorbike");
+    return "a " + color + " motorbike";
   } else {
-    console.log("unknown vehicle");
+    return "unknown vehicle";
   }
 }
 
-vehicleType("blue", 1);
+console.log(vehicleType("blue", 1));
