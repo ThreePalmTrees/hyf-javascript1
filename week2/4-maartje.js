@@ -44,13 +44,12 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 let hourSalary = 23;
 let hoursWorked = 0;
-let earnings = 0;
+const earnings = hoursWorked * hourSalary;
 
-for (i = 0; i < tasks.length; i++) {
+for (let i = 0; i < tasks.length; i++) {
   if (tasks[i].duration >= 120) {
     hoursWorked += tasks[i].duration / 60;
   }
 }
 
-earnings = hoursWorked * hourSalary;
 console.log("Maartje has earned: " + earnings.toFixed(2) + " euros.");
